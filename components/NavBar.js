@@ -2,11 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Squeeze as Hamburger } from 'hamburger-react'
 import { Hero } from './Hero';
 
-const NavBar = () => {
+const NavBar =  ({ onAboutClick }) => {
 
   const handleAboutClick = (event) => {
     event.preventDefault();
     const screenWidth = window.innerWidth;
+
+    onAboutClick();
   
     // Define breakpoints
     const lgBreakpoint = 1280; // Large screens
@@ -48,19 +50,19 @@ const NavBar = () => {
 
   return (
     <div className="w-full">
-      <nav className="flex items-center items justify-between bg-black p-6 z-20">
+      <nav className="flex items-center items justify-between bg-black p-6 z-20 mt-4">
         <div className="lg:ml-4 flex items-center flex-shrink-0">
           <img src="/logo-1.svg" alt="Logo" className="h-16 w-16 mr-2" />
         </div>
         <div className="hidden xl:block">
           <div className="text-sm flex items-center">
-            <a href="#about" onClick={handleAboutClick} className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-12 menu-item">
+            <a href="#about" onClick={handleAboutClick} className="block lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-16 menu-item">
               About
             </a>
-            <a href="#projects" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-12 menu-item">
+            <a href="#projects" className="block lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-16 menu-item">
               Projects
             </a>
-            <a href="#resume" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-8 menu-item">
+            <a href="#resume" className="block lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-12 menu-item">
               Resume
             </a>
             <a href="#contact" className="lg:inline-block text-sm px-6 py-4 leading-none text-white border-white bg hover:border-transparent hover:text-black hover:bg-white mr-12 lg:mt-0 menu-item-button">
@@ -79,7 +81,7 @@ const NavBar = () => {
             <a href="#resume" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-8 menu-item">
               Resume
             </a>
-            <a href="#contact" className="lg:inline-block text-sm px-6 py-4 leading-none text-white border-white bg hover:border-transparent hover:text-black hover:bg-white mr-12 lg:mt-0 menu-item-button">
+            <a href="#contact" className="lg:inline-block text-sm px-6 py-4 leading-none text-white border-white bg hover:border-transparent hover:text-black hover:bg-white lg:mt-0 menu-item-button">
               Get in Touch
             </a>
           </div>

@@ -7,9 +7,9 @@ export const Hero = () => {
         loop: true,
         from: { transform: 'translateY(0px)' },
         to: [
-          { transform: 'translateY(-10px)' },
+          { transform: 'translateY(-8px)' },
           { transform: 'translateY(0px)' },
-          { transform: 'translateY(10px)' },
+          { transform: 'translateY(8px)' },
           { transform: 'translateY(0px)' }
         ],
         config: { duration: 500 } // Adjust the duration as needed
@@ -52,8 +52,8 @@ export const Hero = () => {
                     <animated.p style={fadeInUp_1} className="hero-subtext-md relative text-xs px-[10px]">
                             Hi, I'm Romone Rose, a Business Intelligence Specialist with a strong background in Web and Software Development. Discover how my expertise drives innovative and impactful digital solutions.
                     </animated.p>
-                    <div className='scroll-image-container-md relative mt-8'>
-                        <animated.img style={bounce} src="/scroll.svg" alt="Scroll Image" className="h-12 w-12" />
+                    <div className='scroll-image-container-md relative mt-6'>
+                        <animated.img style={bounce} src="/scroll.svg" alt="Scroll Image" className="h-12 w-12 " />
                     </div>
                 </div> 
         </div>
@@ -66,8 +66,8 @@ export const Hero = () => {
                     <animated.p style={fadeInUp_1} className="hero-subtext-sm relative text-xs px-[10px]">
                             Hi, I'm Romone Rose, a Business Intelligence Specialist with a strong background in Web and Software Development. Discover how my expertise drives innovative and impactful digital solutions.
                     </animated.p>
-                    <div className='scroll-image-container-sm relative mt-6'>
-                        <animated.img style={bounce} src="/scroll.svg" alt="Scroll Image" className="h-12 w-12" />
+                    <div className='scroll-image-container-sm relative mt-8'>
+                        <animated.img style={bounce} src="/scroll.svg" alt="Scroll Image" className="h-8 w-8" />
                     </div>
                 </div> 
         </div>

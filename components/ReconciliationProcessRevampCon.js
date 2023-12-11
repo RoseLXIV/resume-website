@@ -33,7 +33,7 @@ const ReconciliationProcessRevampCon = ({
         style={logo1IconStyle}
       />
       <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
-        <b className="self-stretch relative tracking-[-1px] leading-[120%]">
+        <b className="self-stretch relative tracking-[-1px] leading-[120%] projects-header">
           {reconciliationProcessImag}
         </b>
         <div className="self-stretch relative text-lg leading-[32px] font-light font-display-xs-regular">
