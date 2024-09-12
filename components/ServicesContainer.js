@@ -24,7 +24,7 @@ const ServicesContainer = () => {
             </div>
           </div>
           <img
-            className="absolute h-[156.91%] w-[219.53%] top-[-17.43%] right-[-90.36%] bottom-[-39.48%] left-[-29.17%] max-w-full overflow-hidden max-h-full projects-image"
+            className="absolute rotate-180 h-[156.91%] w-[219.53%] top-[-17.43%] right-[-90.36%] bottom-[-60.48%] left-[-18.17%] max-w-full overflow-hidden max-h-full projects-image"
             alt=""
             src="/topographic-7.svg"
           />

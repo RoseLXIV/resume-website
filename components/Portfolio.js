@@ -9,7 +9,7 @@ const Portfolio = () => {
         <div className='flex flex-row justify-start items-center ml-24'>
             <div className="w-full flex flex-col items-start justify-start pt-[82px] px-0 pb-0 box-border text-left text-41xl text-off-white">
             <Eyebrow
-                text="PROJECTS"
+                text="LATEST PROJECTS"
                 lineBorderTop="1px solid #fff"
                 textLetterSpacing="0.1em"
                 textFontWeight="800"
